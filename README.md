@@ -52,8 +52,46 @@ Although this project is not live at the moment, the backend system is fully fun
     ```
 3. Set up environment variables in a `.env` file:
     ```bash
-    RABBITMQ_URL=your-rabbitmq-url
-    API_URL=your-backend-url
+      PORT =
+      NODE_ENV =
+      
+      SENDER_NAME = 
+      SENDER_ADDRESS =
+      SENDER_PASSWORD =
+      
+      SERVER_HOST =
+      SERVER_PORT =
+      
+      TOKEN_SECRET =
+      REFRESH_TOKEN_EXP_TIME =
+      TOKEN_EXP_TIME =
+      
+      DEVELOPMENT_HOST =
+      DEVELOPMENT_USER =
+      DEVELOPMENT_PASSWORD =
+      DEVELOPMENT_DB =
+      DEVELOPMENT_DIALECT =
+      
+      PRODUCTION_HOST =
+      PRODUCTION_USER =
+      PRODUCTION_PASSWORD =
+      PRODUCTION_DB =
+      PRODUCTION_DIALECT =
+      
+      PASSWORD_RESET_BASE_URL =
+      
+      REDIS_AUTH_PASSWORD =
+      REDIS_AUTH_PORT =
+      REDIS_AUTH_HOST =
+      
+      MAILGUN_API_KEY =
+      MAILGUN_DOMAIN =
+      MAILGUN_HOST =
+      MAILGUN_SENDER =
+      
+      DEFAULT_ADMIN_PASSWORD =
+      
+      RECAPTCHA_SECRET_KEY =
     ```
 4. Set up the PostgreSQL database and run migrations:
 
