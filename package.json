@@ -1,0 +1,44 @@
+{
+  "name": "mercury-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "npx sequelize-cli db:migrate & npx sequelize-cli db:seed --seed 20230311081628-add-roles & npx sequelize-cli db:seed --seed 20230311064211-admin-user & npx sequelize-cli db:seed --seed 20230311084546-add-admin-role-to-admin",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.5",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^6.14.2",
+    "form-data": "^4.0.0",
+    "helmet": "^6.0.1",
+    "ioredis": "^5.3.1",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "mailgun.js": "^8.2.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.8.0",
+    "rand-token": "^1.0.1",
+    "rate-limit-redis": "^3.0.1",
+    "sequelize": "^6.25.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "sequelize-cli": "^6.6.0"
+  }
+}
